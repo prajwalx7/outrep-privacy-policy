@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Deletion Instructions - OUTREP: Push-Up Battles</title>
-  <meta name="description" content="Step-by-step instructions on how to permanently delete your OUTREP: Push-Up Battles account and all associated workout, match, and profile data.">
+  <title>Terms of Service - OUTREP: Push-Up Battles</title>
+  <meta name="description" content="Terms of Service for OUTREP: Push-Up Battles. Read our rules on physical health disclaimers, live 1v1 video battles, AI pose detection, and athlete fair play.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,11 +16,10 @@
       --bg-card-subtle: #F8FAFC;
       --primary: #38C172;
       --primary-dark: #2E7D32;
+      --primary-light: #5CDB95;
       --primary-tint: rgba(56, 193, 114, 0.12);
       --danger: #FF4B4B;
-      --danger-dark: #D32F2F;
       --danger-tint: rgba(255, 75, 75, 0.10);
-      --danger-border: rgba(255, 75, 75, 0.25);
       --text-primary: #1E293B;
       --text-secondary: #64748B;
       --text-muted: #94A3B8;
@@ -32,6 +31,7 @@
       --radius-lg: 16px;
       --radius-full: 9999px;
       --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
       --font-heading: 'Bebas Neue', 'Inter', sans-serif;
       --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
@@ -126,9 +126,9 @@
     }
 
     .nav-link.active {
-      color: var(--danger-dark);
-      background: var(--danger-tint);
-      border-color: var(--danger-border);
+      color: var(--primary-dark);
+      background: var(--primary-tint);
+      border-color: rgba(56, 193, 114, 0.35);
       font-weight: 700;
     }
 
@@ -148,8 +148,8 @@
       font-family: var(--font-heading);
       font-size: 16px;
       letter-spacing: 1px;
-      color: var(--danger-dark);
-      background: var(--danger-tint);
+      color: var(--primary-dark);
+      background: var(--primary-tint);
       padding: 4px 12px;
       border-radius: var(--radius-sm);
       margin-bottom: 10px;
@@ -168,194 +168,133 @@
       color: var(--text-secondary);
       line-height: 1.55;
       max-width: 760px;
+      margin-bottom: 14px;
     }
 
-    /* ─── WARNING CALLOUT ─── */
-    .warning-callout {
-      background: var(--danger-tint);
-      border: 1.2px solid var(--danger-border);
-      border-left: 4px solid var(--danger);
-      border-radius: var(--radius-md);
-      padding: 16px 20px;
-      margin: 24px 0 32px;
-    }
-
-    .warning-title {
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--danger-dark);
-      margin-bottom: 4px;
+    .meta-bar {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
     }
 
-    .warning-callout p {
-      font-size: 13.5px;
-      color: var(--text-body);
-      margin: 0;
-      line-height: 1.5;
+    .meta-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--primary);
     }
 
-    /* ─── WHITE CANVAS ─── */
+    /* ─── CONTINUOUS WHITE EDITORIAL CANVAS ─── */
     .document-canvas {
       background: var(--bg-card);
       border-radius: var(--radius-lg);
       border: 1.2px solid var(--border-color);
       box-shadow: var(--shadow-sm);
       padding: 36px 32px;
-      margin-bottom: 32px;
     }
 
-    .section-title {
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-top: 18px;
+    .section-item {
       margin-bottom: 24px;
     }
 
-    .step-box {
-      background: var(--bg-card-subtle);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-      padding: 22px 20px;
-    }
-
-    .step-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--primary-tint);
-      color: var(--primary-dark);
-      font-weight: 800;
-      font-size: 15px;
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
       margin-bottom: 12px;
     }
 
-    .step-heading {
+    .section-num {
       font-size: 16px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 6px;
+      font-weight: 800;
+      color: var(--primary);
     }
 
-    .step-desc {
-      font-size: 13.5px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .step-path {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--primary-dark);
-      background: var(--primary-tint);
-      padding: 4px 10px;
-      border-radius: var(--radius-sm);
-    }
-
-    /* ─── DATA TABLE ─── */
-    .table-container {
-      overflow-x: auto;
-      margin: 18px 0;
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-md);
-    }
-
-    table.data-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 13.5px;
-    }
-
-    table.data-table th {
-      background: var(--bg-card-subtle);
-      color: var(--text-primary);
-      font-weight: 700;
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    table.data-table td {
-      padding: 13px 16px;
-      border-bottom: 1px solid var(--border-color);
-      color: var(--text-body);
-    }
-
-    table.data-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .badge-deleted {
-      display: inline-block;
-      padding: 3px 8px;
-      background: var(--danger-tint);
-      color: var(--danger-dark);
-      border-radius: var(--radius-full);
-      font-size: 11.5px;
-      font-weight: 700;
-    }
-
-    /* ─── EMAIL FALLBACK ─── */
-    .email-box {
-      background: var(--bg-card);
-      border: 1.2px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: 28px 32px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 32px;
-    }
-
-    .email-box h3 {
-      font-size: 18px;
+    .section-title {
+      font-size: 17px;
       font-weight: 800;
       color: var(--text-primary);
+      letter-spacing: -0.2px;
+    }
+
+    .section-item p {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
       margin-bottom: 10px;
+    }
+
+    .bullet-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    .bullet-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: var(--border-light);
+      margin: 24px 0;
+    }
+
+    /* ─── CONTACT ACTION BOX ─── */
+    .contact-box {
+      width: 100%;
+      padding: 18px 20px;
+      background: var(--bg-card-subtle);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      margin-top: 16px;
+    }
+
+    .contact-header {
       display: flex;
       align-items: center;
       gap: 8px;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+      font-size: 14.5px;
+      font-weight: 700;
     }
 
-    .email-box p {
-      font-size: 14px;
+    .contact-info {
+      font-size: 13px;
       color: var(--text-secondary);
-      line-height: 1.55;
-      margin-bottom: 14px;
+      line-height: 1.6;
+      margin-bottom: 12px;
     }
 
-    .email-btn {
+    .contact-btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 9px 18px;
-      background: var(--danger);
-      color: #FFFFFF;
+      padding: 8px 16px;
+      background: var(--primary-tint);
+      color: var(--primary-dark);
       border-radius: var(--radius-sm);
       text-decoration: none;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       transition: background 0.2s ease;
     }
 
-    .email-btn:hover {
-      background: var(--danger-dark);
+    .contact-btn:hover {
+      background: rgba(56, 193, 114, 0.22);
     }
 
     /* ─── FOOTER ─── */
@@ -396,7 +335,7 @@
     }
 
     @media (max-width: 640px) {
-      .document-canvas, .email-box {
+      .document-canvas {
         padding: 24px 18px;
       }
       .page-title {
@@ -416,8 +355,8 @@
       </a>
       <div class="nav-links">
         <a href="privacy_policy.html" class="nav-link">Privacy Policy</a>
-        <a href="terms_and_conditions.html" class="nav-link">Terms of Service</a>
-        <a href="delete_account.html" class="nav-link active">Delete Account</a>
+        <a href="terms_and_conditions.html" class="nav-link active">Terms of Service</a>
+        <a href="delete_account.html" class="nav-link">Delete Account</a>
       </div>
     </div>
   </header>
@@ -425,116 +364,186 @@
   <!-- MAIN PAGE WRAPPER -->
   <main class="page-wrapper">
     <div class="page-header">
-      <div class="page-tag">DATA DELETION INSTRUCTIONS</div>
-      <h1 class="page-title">Account Deletion Instructions</h1>
+      <div class="page-tag">TERMS OF SERVICE</div>
+      <h1 class="page-title">Terms of Service</h1>
       <p class="page-subtitle">
-        Step-by-step instructions on permanently deleting your OUTREP account, removing workout logs, XP, and profile details.
+        Please read these terms carefully before using OUTREP. By accessing or participating in workout battles, you agree to be bound by this agreement.
       </p>
+      <div class="meta-bar">
+        <span class="meta-dot"></span>
+        <span>Last updated: August 20, 2026</span>
+      </div>
     </div>
 
-    <!-- WARNING NOTICE -->
-    <div class="warning-callout">
-      <div class="warning-title">⚠️ Immediate and Permanent Action</div>
-      <p>
-        Deleting your account is permanent and cannot be undone. All your workout statistics, match history, levels, XP, and friend links will be completely and irreversibly removed.
-      </p>
-    </div>
-
-    <!-- METHOD 1: IN-APP INSTRUCTIONS -->
+    <!-- WHITE EDITORIAL CANVAS -->
     <article class="document-canvas">
-      <h2 class="section-title">📱 Method 1: Delete Directly Inside the App (Recommended)</h2>
-      <p style="color: var(--text-secondary); margin-bottom: 0;">
-        Follow these steps inside the OUTREP mobile application:
-      </p>
-
-      <div class="steps-grid">
-        <div class="step-box">
-          <div class="step-badge">1</div>
-          <div class="step-heading">Open Profile Screen</div>
-          <div class="step-desc">
-            Launch OUTREP and tap the <strong>Profile</strong> tab on the bottom navigation bar.
-          </div>
-          <span class="step-path">App &gt; Profile</span>
+      
+      <!-- Section 1 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">1.</span>
+          <h2 class="section-title">Acceptance of Terms</h2>
         </div>
+        <p>
+          By downloading, installing, registering for, or using OUTREP: Push-Up Battles ("OUTREP", "App", "we", or "us"), you agree to comply with and be legally bound by these Terms of Service. If you do not agree to these terms, please discontinue use of the App immediately.
+        </p>
+        <p>
+          We reserve the right to amend or update these terms periodically. Continued use of the application after modifications are published signifies your acceptance of the revised agreement.
+        </p>
+      </section>
 
-        <div class="step-box">
-          <div class="step-badge">2</div>
-          <div class="step-heading">Tap Manage Account</div>
-          <div class="step-desc">
-            Under the <strong>ACCOUNT</strong> section, tap <strong>Manage Account</strong>.
-          </div>
-          <span class="step-path">Profile &gt; Manage Account</span>
+      <div class="section-divider"></div>
+
+      <!-- Section 2 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">2.</span>
+          <h2 class="section-title">Health &amp; Physical Safety Disclaimer</h2>
         </div>
+        <p>
+          Physical exercise and athletic competition carry inherent risks of injury, physical strain, or medical complications. You are solely responsible for assessing your physical health and fitness level prior to performing workouts or battles on OUTREP.
+        </p>
+        <p>
+          OUTREP does not provide medical evaluation or clinical advice. Always consult a qualified medical professional before undertaking any rigorous exercise routine or pushup challenge.
+        </p>
+        <p>
+          <strong>Assumption of Physical Risk:</strong> By participating in OUTREP workouts, arcade challenges, or live 1v1 matches, you voluntarily accept full responsibility for your physical safety and assume all risks of injury. OUTREP is not liable for any physical harm, strains, or accidents sustained while using the application.
+        </p>
+      </section>
 
-        <div class="step-box">
-          <div class="step-badge">3</div>
-          <div class="step-heading">Tap Delete Account</div>
-          <div class="step-desc">
-            Scroll to the bottom, tap the red <strong>DELETE ACCOUNT</strong> button, and confirm the prompt.
-          </div>
-          <span class="step-path" style="background: var(--danger-tint); color: var(--danger-dark);">Manage &gt; DELETE ACCOUNT</span>
+      <div class="section-divider"></div>
+
+      <!-- Section 3 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">3.</span>
+          <h2 class="section-title">User Accounts &amp; Security</h2>
         </div>
-      </div>
+        <p>
+          To access leaderboards and live challenges, you must create an account providing accurate and authentic information.
+        </p>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Account Confidentiality:</strong> You are solely responsible for safeguarding your login credentials and for all activities conducted under your account.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Age Requirements:</strong> You must be at least 13 years old (or the legal age of consent in your jurisdiction) to establish an account.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Single Profile:</strong> Creating duplicate accounts or manipulating ratings through alt accounts violates our fair play policy.</div>
+        </div>
+      </section>
 
-      <div style="height: 1px; background: var(--border-light); margin: 28px 0;"></div>
+      <div class="section-divider"></div>
 
-      <h2 class="section-title">📋 Data Deletion Breakdown</h2>
-      <p style="color: var(--text-secondary);">
-        In accordance with Google Play Developer Policy and data protection regulations:
-      </p>
+      <!-- Section 4 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">4.</span>
+          <h2 class="section-title">Live 1v1 Battles &amp; Community Standards</h2>
+        </div>
+        <p>
+          OUTREP features live real-time video competition where athletes match against peers. You agree to treat all athletes with respect and maintain high standards of sportsmanship.
+        </p>
+        <p>
+          The following behaviors are strictly prohibited and will result in immediate suspension or permanent ban:
+        </p>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Broadcasting nudity, sexually explicit, or inappropriate camera content during live matches.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Harassment, abusive language, bullying, or hate speech toward opponents.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Using offensive, vulgar, or trademark-infringing usernames and profile pictures.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Employing third-party bots, emulators, camera spoofers, or automated tools to fabricate workout repetitions.</div>
+        </div>
+      </section>
 
-      <div class="table-container">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Data Type</th>
-              <th>Status</th>
-              <th>Action Taken</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Profile &amp; Account</strong></td>
-              <td><span class="badge-deleted">Permanently Deleted</span></td>
-              <td>Username, display name, email, avatar image, and Firebase Auth UID are permanently erased.</td>
-            </tr>
-            <tr>
-              <td><strong>Workout Metrics &amp; Reps</strong></td>
-              <td><span class="badge-deleted">Permanently Deleted</span></td>
-              <td>All recorded pushup counts, workout timestamps, and personal records are purged immediately.</td>
-            </tr>
-            <tr>
-              <td><strong>XP, Levels &amp; Streaks</strong></td>
-              <td><span class="badge-deleted">Permanently Deleted</span></td>
-              <td>Athlete levels, XP transaction logs, streak records, and boss raid history are removed.</td>
-            </tr>
-            <tr>
-              <td><strong>Matches &amp; Social</strong></td>
-              <td><span class="badge-deleted">Permanently Deleted</span></td>
-              <td>1v1 match results, friend lists, pending challenge requests, and head-to-head records are severed.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="section-divider"></div>
+
+      <!-- Section 5 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">5.</span>
+          <h2 class="section-title">Intellectual Property Rights</h2>
+        </div>
+        <p>
+          All components of OUTREP—including but not limited to the user interface, exercise detection algorithms, game modes (Flappy Pushups, Neck Rush), artwork, audio effects, and trademarks—are the proprietary property of OUTREP and protected by international intellectual property laws.
+        </p>
+        <p>
+          You are granted a limited, personal, revocable, non-exclusive license to use the application for its intended workout purpose.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 6 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">6.</span>
+          <h2 class="section-title">Account Termination &amp; Deletion</h2>
+        </div>
+        <p>
+          You may terminate this agreement at any time by permanently deleting your account and data via <strong>Profile &gt; Manage Account &gt; Delete Account</strong>.
+        </p>
+        <p>
+          We reserve the right to suspend or permanently terminate accounts that violate these Terms, compromise platform integrity, or engage in cheating without prior notice or refund.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 7 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">7.</span>
+          <h2 class="section-title">Disclaimers &amp; Limitation of Liability</h2>
+        </div>
+        <p>
+          OUTREP is provided on an "as-is" and "as-available" basis without warranties of any kind, whether express or implied. We do not guarantee that computer vision detection will be 100% error-free in all lighting or angle conditions.
+        </p>
+        <p>
+          To the maximum extent permitted by applicable law, OUTREP shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the application.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 8 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">8.</span>
+          <h2 class="section-title">Contact &amp; Legal Inquiries</h2>
+        </div>
+        <p>
+          If you have any questions, legal notices, or feedback regarding these Terms of Service, please reach out to our legal team:
+        </p>
+
+        <div class="contact-box">
+          <div class="contact-header">
+            <span>⚖️</span>
+            <span>OUTREP Legal Department</span>
+          </div>
+          <div class="contact-info">
+            <strong>Email:</strong> outrep.app@gmail.com<br>
+            <strong>Application:</strong> OUTREP: Push-Up Battles
+          </div>
+          <a href="mailto:outrep.app@gmail.com?subject=Terms%20of%20Service%20Inquiry%20-%20OUTREP" class="contact-btn">
+            Contact Legal Team &rarr;
+          </a>
+        </div>
+      </section>
+
     </article>
-
-    <!-- METHOD 2: EMAIL FALLBACK -->
-    <div class="email-box">
-      <h3>✉️ Method 2: Alternate Deletion Request (Via Email)</h3>
-      <p>
-        If you have uninstalled the app or cannot access your account on your device, you can submit an account deletion request directly to our support team:
-      </p>
-      <p>
-        Please email us from your <strong>registered email address</strong> with the subject line <strong>"Account Deletion Request - OUTREP"</strong>:
-      </p>
-      <a href="mailto:outrep.app@gmail.com?subject=Account%20Deletion%20Request%20-%20OUTREP" class="email-btn">
-        Email outrep.app@gmail.com &rarr;
-      </a>
-      <p style="margin-top: 14px; margin-bottom: 0; font-size: 13px; color: var(--text-muted);">
-        Email deletion requests are verified and processed within 3–5 business days.
-      </p>
-    </div>
-
   </main>
 
   <!-- FOOTER -->
