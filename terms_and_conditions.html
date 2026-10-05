@@ -3,38 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms &amp; Conditions - OUTREP: Compete With Friends</title>
-  <meta name="description" content="Terms and Conditions of Service for OUTREP: Compete With Friends. Read our rules on physical health disclaimers, live 1v1 video battles, AI pose detection, and athlete fair play.">
+  <title>Terms of Service - OUTREP: Push-Up Battles</title>
+  <meta name="description" content="Terms of Service for OUTREP: Push-Up Battles. Read our rules on physical health disclaimers, live 1v1 video battles, AI pose detection, and athlete fair play.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-base: #0B0F17;
-      --bg-surface: #131A26;
-      --bg-surface-elevated: #1B2436;
-      --bg-surface-glass: rgba(19, 26, 38, 0.88);
-      --primary: #FF5A1F;
-      --primary-light: #FF7744;
-      --primary-glow: rgba(255, 90, 31, 0.25);
-      --accent-cyan: #00E5FF;
-      --accent-green: #00E676;
-      --accent-amber: #FFB300;
-      --danger: #EF4444;
-      --text-main: #F1F5F9;
+      --bg-base: #F5F7FA;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F8FAFC;
+      --primary: #38C172;
+      --primary-dark: #2E7D32;
+      --primary-light: #5CDB95;
+      --primary-tint: rgba(56, 193, 114, 0.12);
+      --danger: #FF4B4B;
+      --danger-tint: rgba(255, 75, 75, 0.10);
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
       --text-muted: #94A3B8;
-      --text-dim: #64748B;
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-highlight: rgba(255, 90, 31, 0.3);
-      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
-      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+      --text-body: #475569;
+      --border-color: #E2E8F0;
+      --border-light: #F1F5F9;
       --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
       --radius-full: 9999px;
-      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+      --font-heading: 'Bebas Neue', 'Inter', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     * {
@@ -45,37 +44,32 @@
 
     html {
       scroll-behavior: smooth;
-      color-scheme: dark;
     }
 
     body {
       background-color: var(--bg-base);
-      color: var(--text-main);
+      color: var(--text-primary);
       font-family: var(--font-body);
-      line-height: 1.7;
-      font-size: 16px;
+      line-height: 1.6;
+      font-size: 15px;
       -webkit-font-smoothing: antialiased;
-      background-image: 
-        radial-gradient(circle at 10% 20%, rgba(255, 90, 31, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.05) 0%, transparent 40%);
-      background-attachment: fixed;
     }
 
-    /* ─── HEADER / NAVBAR ─── */
+    /* ─── TOP NAVBAR ─── */
     header.site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      background: var(--bg-surface-glass);
-      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1.5px solid var(--border-color);
     }
 
     .nav-container {
-      max-width: 1200px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 14px 24px;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -86,831 +80,484 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
-      color: var(--text-main);
     }
 
     .brand-badge {
-      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
       color: #FFF;
       font-family: var(--font-heading);
-      font-weight: 800;
-      font-size: 17px;
-      padding: 5px 13px;
-      border-radius: var(--radius-sm);
+      font-size: 20px;
       letter-spacing: 1px;
-      box-shadow: 0 4px 14px var(--primary-glow);
+      padding: 3px 12px;
+      border-radius: var(--radius-sm);
     }
 
     .brand-name {
-      font-family: var(--font-heading);
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      font-family: var(--font-body);
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
     }
 
     .nav-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
       padding: 7px 14px;
-      background: var(--bg-surface-elevated);
-      color: var(--text-muted);
-      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-full);
       font-size: 13.5px;
       font-weight: 600;
-      cursor: pointer;
+      color: var(--text-secondary);
       text-decoration: none;
+      border: 1px solid transparent;
       transition: all 0.2s ease;
     }
 
     .nav-link:hover {
-      color: var(--text-main);
-      border-color: var(--border-highlight);
-      transform: translateY(-1px);
+      color: var(--primary-dark);
+      background: var(--primary-tint);
     }
 
     .nav-link.active {
-      background: rgba(255, 90, 31, 0.15);
-      border-color: var(--primary);
-      color: var(--primary-light);
-    }
-
-    .btn-print {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 14px;
-      background: var(--bg-surface);
-      color: var(--text-main);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-full);
-      font-size: 13.5px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .btn-print:hover {
-      background: var(--primary);
-      border-color: var(--primary);
-      color: #fff;
-      transform: translateY(-1px);
-    }
-
-    /* ─── HERO BANNER ─── */
-    .hero-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 55px 24px 28px;
-      text-align: center;
-    }
-
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      background: rgba(255, 90, 31, 0.12);
-      border: 1px solid rgba(255, 90, 31, 0.3);
-      border-radius: var(--radius-full);
-      color: var(--primary-light);
-      font-size: 12.5px;
+      color: var(--primary-dark);
+      background: var(--primary-tint);
+      border-color: rgba(56, 193, 114, 0.35);
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
     }
 
-    .hero-title {
+    /* ─── MAIN CONTENT ─── */
+    .page-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 24px;
+    }
+
+    .page-tag {
+      display: inline-block;
       font-family: var(--font-heading);
-      font-size: clamp(30px, 4.5vw, 44px);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: var(--primary-dark);
+      background: var(--primary-tint);
+      padding: 4px 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 10px;
     }
 
-    .hero-subtitle {
-      color: var(--text-muted);
-      font-size: 17.5px;
-      max-width: 720px;
-      margin: 0 auto 24px;
+    .page-title {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.6px;
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      max-width: 760px;
+      margin-bottom: 14px;
     }
 
     .meta-bar {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      color: var(--text-dim);
-      font-size: 13.5px;
-    }
-
-    .meta-item {
-      display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
     }
 
     .meta-dot {
-      width: 7px;
-      height: 7px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background-color: var(--primary);
     }
 
-    /* ─── QUICK HIGHLIGHTS GRID ─── */
-    .highlights-container {
-      max-width: 1200px;
-      margin: 24px auto 44px;
-      padding: 0 24px;
-    }
-
-    .highlights-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .highlight-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-      position: relative;
-    }
-
-    .highlight-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--border-highlight);
-    }
-
-    .highlight-icon {
-      font-size: 28px;
-      margin-bottom: 12px;
-      display: inline-block;
-    }
-
-    .highlight-title {
-      font-family: var(--font-heading);
-      font-size: 17.5px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 8px;
-    }
-
-    .highlight-desc {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.55;
-    }
-
-    /* ─── MAIN CONTENT LAYOUT ─── */
-    .content-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 36px;
-      align-items: start;
-    }
-
-    /* ─── STICKY SIDEBAR ─── */
-    .sidebar {
-      position: sticky;
-      top: 85px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 20px;
-      max-height: calc(100vh - 110px);
-      overflow-y: auto;
-    }
-
-    .sidebar-title {
-      font-family: var(--font-heading);
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-dim);
-      margin-bottom: 14px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .nav-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .nav-list a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 13.5px;
-      font-weight: 500;
-      padding: 8px 12px;
-      border-radius: var(--radius-sm);
-      display: block;
-      transition: all 0.2s ease;
-    }
-
-    .nav-list a:hover {
-      color: var(--text-main);
-      background: var(--bg-surface-elevated);
-      padding-left: 15px;
-    }
-
-    /* ─── DOCUMENT BODY ─── */
-    .doc-body {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
+    /* ─── CONTINUOUS WHITE EDITORIAL CANVAS ─── */
+    .document-canvas {
+      background: var(--bg-card);
       border-radius: var(--radius-lg);
-      padding: 44px;
+      border: 1.2px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      padding: 36px 32px;
     }
 
-    .doc-section {
-      margin-bottom: 48px;
-      scroll-margin-top: 100px;
+    .section-item {
+      margin-bottom: 24px;
     }
 
-    .doc-section:last-child {
-      margin-bottom: 0;
-    }
-
-    .doc-section h2 {
-      font-family: var(--font-heading);
-      font-size: 24px;
-      font-weight: 700;
-      color: #FFF;
-      margin-bottom: 18px;
+    .section-header {
       display: flex;
-      align-items: center;
-      gap: 12px;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 12px;
     }
 
-    .sec-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
+    .section-num {
+      font-size: 16px;
       font-weight: 800;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--bg-surface-elevated);
-      color: var(--primary-light);
-      border: 1px solid var(--border-highlight);
+      color: var(--primary);
     }
 
-    .doc-section h3 {
-      font-family: var(--font-heading);
-      font-size: 18px;
-      font-weight: 600;
-      color: #FFF;
-      margin: 24px 0 12px;
+    .section-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
     }
 
-    .doc-section p {
-      margin-bottom: 16px;
-      color: var(--text-muted);
-    }
-
-    .doc-section ul, .doc-section ol {
-      margin: 16px 0 20px 24px;
-      color: var(--text-muted);
-    }
-
-    .doc-section li {
+    .section-item p {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
       margin-bottom: 10px;
     }
 
-    .doc-section strong {
-      color: var(--text-main);
+    .bullet-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+      color: var(--text-body);
+      line-height: 1.55;
     }
 
-    .callout {
-      background: var(--bg-surface-elevated);
-      border-left: 4px solid var(--primary);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      padding: 16px 20px;
-      margin: 20px 0;
+    .bullet-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 8px;
+      flex-shrink: 0;
     }
 
-    .callout.warning {
-      border-left-color: var(--danger);
-      background: rgba(239, 68, 68, 0.08);
+    .section-divider {
+      height: 1px;
+      background: var(--border-light);
+      margin: 24px 0;
     }
 
-    .callout.info {
-      border-left-color: var(--accent-cyan);
-      background: rgba(0, 229, 255, 0.05);
+    /* ─── CONTACT ACTION BOX ─── */
+    .contact-box {
+      width: 100%;
+      padding: 18px 20px;
+      background: var(--bg-card-subtle);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      margin-top: 16px;
     }
 
-    .callout.success {
-      border-left-color: var(--accent-green);
-      background: rgba(0, 230, 118, 0.05);
-    }
-
-    .callout-title {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 15px;
-      color: var(--text-main);
-      margin-bottom: 6px;
+    .contact-header {
       display: flex;
       align-items: center;
       gap: 8px;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+      font-size: 14.5px;
+      font-weight: 700;
     }
 
-    .contact-card {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-highlight);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      margin-top: 20px;
+    .contact-info {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 12px;
     }
 
-    .contact-card a {
-      color: var(--primary-light);
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--primary-tint);
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
       text-decoration: none;
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background: rgba(56, 193, 114, 0.22);
     }
 
     /* ─── FOOTER ─── */
     footer.site-footer {
-      border-top: 1px solid var(--border-subtle);
-      background: var(--bg-surface);
-      padding: 40px 24px 30px;
+      border-top: 1px solid var(--border-color);
+      background: #FFFFFF;
+      padding: 32px 20px;
       text-align: center;
-      color: var(--text-dim);
-      font-size: 14px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
     }
 
     .footer-content {
-      max-width: 1200px;
+      max-width: 960px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
       align-items: center;
     }
 
     .footer-links {
       display: flex;
-      gap: 20px;
+      gap: 18px;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .footer-links a {
-      color: var(--text-muted);
+      color: var(--text-secondary);
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.2s ease;
     }
 
     .footer-links a:hover {
-      color: var(--primary-light);
+      color: var(--primary-dark);
     }
 
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 900px) {
-      .content-wrapper {
-        grid-template-columns: 1fr;
+    @media (max-width: 640px) {
+      .document-canvas {
+        padding: 24px 18px;
       }
-      .sidebar {
-        display: none;
-      }
-      .doc-body {
-        padding: 28px 20px;
-      }
-    }
-
-    @media print {
-      body {
-        background: #fff;
-        color: #000;
-      }
-      header.site-header, .sidebar, .btn-print, .highlights-container, footer.site-footer, .nav-links {
-        display: none !important;
-      }
-      .content-wrapper {
-        display: block;
-        padding: 0;
-      }
-      .doc-body {
-        border: none;
-        padding: 0;
-        background: transparent;
-      }
-      .doc-section h2, .doc-section h3, strong {
-        color: #000 !important;
-      }
-      p, li, td {
-        color: #333 !important;
+      .page-title {
+        font-size: 26px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- ─── HEADER / NAVBAR ─── -->
+  <!-- TOP NAVBAR -->
   <header class="site-header">
     <div class="nav-container">
       <a href="privacy_policy.html" class="brand">
         <span class="brand-badge">OUTREP</span>
-        <span class="brand-name">Compete With Friends</span>
+        <span class="brand-name">Push-Up Battles</span>
       </a>
       <div class="nav-links">
         <a href="privacy_policy.html" class="nav-link">Privacy Policy</a>
-        <a href="terms_and_conditions.html" class="nav-link active">Terms &amp; Conditions</a>
+        <a href="terms_and_conditions.html" class="nav-link active">Terms of Service</a>
         <a href="delete_account.html" class="nav-link">Delete Account</a>
-        <button class="btn-print" onclick="window.print()">
-          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-          Print
-        </button>
       </div>
     </div>
   </header>
 
-  <!-- ─── HERO SECTION ─── -->
-  <section class="hero-section">
-    <div class="hero-pill">Official User Agreement</div>
-    <h1 class="hero-title">Terms &amp; Conditions</h1>
-    <p class="hero-subtitle">
-      Please review these terms carefully before accessing or participating in workout battles, arcade challenges, and competitive multiplayer on OUTREP.
-    </p>
-    <div class="meta-bar">
-      <div class="meta-item"><span class="meta-dot"></span> Last Updated: August 20, 2026</div>
-      <div class="meta-item">• Version: 1.0</div>
-      <div class="meta-item">• Applicable App: OUTREP: Compete With Friends</div>
-    </div>
-  </section>
-
-  <!-- ─── KEY HIGHLIGHTS GRID ─── -->
-  <section class="highlights-container">
-    <div class="highlights-grid">
-      <div class="highlight-card">
-        <span class="highlight-icon">⚠️</span>
-        <h3 class="highlight-title">Physical Health &amp; Safety</h3>
-        <p class="highlight-desc">
-          Exercise carries inherent physical injury risks. OUTREP does not provide medical advice. Consult a healthcare professional before participating.
-        </p>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-icon">⚖️</span>
-        <h3 class="highlight-title">Fair Play &amp; Anti-Cheat</h3>
-        <p class="highlight-desc">
-          Using automated bots, emulators, camera spoofers, or recorded video loops to fabricate repetitions is strictly prohibited and subject to permanent ban.
-        </p>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-icon">🥊</span>
-        <h3 class="highlight-title">Live 1v1 Sportsmanship</h3>
-        <p class="highlight-desc">
-          All athletes must maintain sportsmanship. Nudity, harassment, hateful remarks, or inappropriate camera conduct during live matches are strictly prohibited.
-        </p>
-      </div>
-      <div class="highlight-card">
-        <span class="highlight-icon">🏆</span>
-        <h3 class="highlight-title">Virtual Items &amp; XP</h3>
-        <p class="highlight-desc">
-          Experience points (XP), levels, streak milestones, and badges have no real-world cash value and cannot be exchanged, sold, or transferred.
-        </p>
+  <!-- MAIN PAGE WRAPPER -->
+  <main class="page-wrapper">
+    <div class="page-header">
+      <div class="page-tag">TERMS OF SERVICE</div>
+      <h1 class="page-title">Terms of Service</h1>
+      <p class="page-subtitle">
+        Please read these terms carefully before using OUTREP. By accessing or participating in workout battles, you agree to be bound by this agreement.
+      </p>
+      <div class="meta-bar">
+        <span class="meta-dot"></span>
+        <span>Last updated: August 20, 2026</span>
       </div>
     </div>
-  </section>
 
-  <!-- ─── MAIN CONTENT ─── -->
-  <main class="content-wrapper">
-    
-    <!-- STICKY TABLE OF CONTENTS -->
-    <aside class="sidebar">
-      <div class="sidebar-title">Table of Contents</div>
-      <ul class="nav-list">
-        <li><a href="#acceptance">1. Acceptance of Terms</a></li>
-        <li><a href="#health-disclaimer">2. Physical Health &amp; Safety</a></li>
-        <li><a href="#user-accounts">3. Accounts &amp; Eligibility</a></li>
-        <li><a href="#camera-pose">4. Camera &amp; AI Repetition Detection</a></li>
-        <li><a href="#live-multiplayer">5. Live 1v1 Battles &amp; Conduct</a></li>
-        <li><a href="#fair-play">6. Fair Play &amp; Anti-Cheat Rules</a></li>
-        <li><a href="#virtual-items">7. Virtual Points (XP) &amp; Badges</a></li>
-        <li><a href="#purchases">8. Subscriptions &amp; Billing</a></li>
-        <li><a href="#intellectual-property">9. Intellectual Property</a></li>
-        <li><a href="#user-content">10. User Content &amp; Media</a></li>
-        <li><a href="#termination">11. Termination &amp; Deletion</a></li>
-        <li><a href="#warranty-disclaimer">12. Disclaimer of Warranties</a></li>
-        <li><a href="#limitation-liability">13. Limitation of Liability</a></li>
-        <li><a href="#indemnification">14. Indemnification</a></li>
-        <li><a href="#governing-law">15. Governing Law &amp; Disputes</a></li>
-        <li><a href="#contact-legal">16. Contact &amp; Legal Notices</a></li>
-      </ul>
-    </aside>
-
-    <!-- DOCUMENT CONTENT -->
-    <article class="doc-body">
+    <!-- WHITE EDITORIAL CANVAS -->
+    <article class="document-canvas">
       
-      <!-- 1. ACCEPTANCE -->
-      <section id="acceptance" class="doc-section">
-        <h2><span class="sec-num">01</span> Acceptance of Terms &amp; Scope</h2>
-        <p>
-          Welcome to <strong>OUTREP: Compete With Friends</strong> ("OUTREP", "App", "Service", "we", "our", or "us"). These Terms &amp; Conditions ("Terms") constitute a legally binding agreement between you ("you", "user", or "athlete") and OUTREP.
-        </p>
-        <p>
-          By downloading, installing, accessing, creating an account, or participating in workout matches within OUTREP, you represent that you have read, understood, and agreed to be bound by these Terms and our <a href="privacy_policy.html" style="color: var(--primary-light); font-weight: 600;">Privacy Policy</a>. If you do not agree to these Terms, you must discontinue use and uninstall the App immediately.
-        </p>
-        <p>
-          We reserve the right to modify or amend these Terms at any time. When updates occur, we will adjust the "Last Updated" date at the top of this document. Your continued use of the application following the posting of updated Terms confirms your acceptance of such modifications.
-        </p>
-      </section>
-
-      <!-- 2. HEALTH & MEDICAL DISCLAIMER -->
-      <section id="health-disclaimer" class="doc-section">
-        <h2><span class="sec-num">02</span> Health, Fitness &amp; Physical Safety Disclaimer</h2>
-        
-        <div class="callout warning">
-          <div class="callout-title">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            IMPORTANT MEDICAL &amp; PHYSICAL SAFETY WARNING
-          </div>
-          OUTREP: Compete With Friends is an interactive physical exercise gamification application. Strenuous athletic workouts—including pushups, squats, lunges, and speed battles—carry inherent risks of physical strain, musculoskeletal injury, cardiovascular distress, or exhaustion.
-        </div>
-
-        <p>
-          <strong>A. Not Medical Advice:</strong> All content, repetition counters, workout guides, and feedback provided within OUTREP are intended solely for entertainment, fitness tracking, and gamification purposes. OUTREP does NOT provide medical diagnosis, clinical evaluation, physical therapy, or healthcare advice.
-        </p>
-        <p>
-          <strong>B. Physician Consultation:</strong> You should consult your physician or qualified medical doctor before undertaking any new workout regime, pushup battle, or physical fitness routine, particularly if you have a history of high blood pressure, heart disease, chest pain, spinal/joint injuries, dizziness, or bone/joint disorders.
-        </p>
-        <p>
-          <strong>C. Voluntary Assumption of Risk:</strong> By utilizing OUTREP, you acknowledge that you are voluntarily participating in intense physical exertion. You freely and voluntarily assume all risks, known and unknown, associated with such athletic training, including sprains, strains, fractures, or accidents.
-        </p>
-        <p>
-          <strong>D. Safe Workout Environment:</strong> You are solely responsible for ensuring your physical workout space is safe, flat, clean, adequately lit, non-slip, and clear of pets, furniture, electrical cords, or obstacles before initiating any workout session.
-        </p>
-      </section>
-
-      <!-- 3. USER ACCOUNTS & ELIGIBILITY -->
-      <section id="user-accounts" class="doc-section">
-        <h2><span class="sec-num">03</span> User Eligibility, Accounts &amp; Security</h2>
-        <p>
-          To access competitive leaderboards, 1v1 multiplayer matchmaking, and persistent workout stats, you must register for an athlete account via Google Sign-In or email credentials.
-        </p>
-        <ul>
-          <li><strong>Age Requirement:</strong> You must be at least 13 years old (or the legal age of consent for digital services in your jurisdiction) to establish an account or use OUTREP. If you are under 18 years of age, you represent that you have obtained consent from a parent or legal guardian.</li>
-          <li><strong>Account Authenticity:</strong> You agree to provide true, accurate, and up-to-date information during onboarding and profile configuration.</li>
-          <li><strong>Account Security:</strong> You are exclusively responsible for maintaining the confidentiality of your credentials and device access. Any activities originating from your authenticated account are deemed your personal responsibility.</li>
-          <li><strong>Prohibition of Multi-Accounting:</strong> Creating alternate "smurf" profiles or bot accounts to artificially manipulate leaderboards, farm XP, or alter Elo ratings is strictly prohibited.</li>
-        </ul>
-      </section>
-
-      <!-- 4. CAMERA & POSE DETECTION RULES -->
-      <section id="camera-pose" class="doc-section">
-        <h2><span class="sec-num">04</span> Camera Usage &amp; AI Repetition Detection</h2>
-        <p>
-          OUTREP utilizes your device camera combined with on-device computer vision algorithms (Google ML Kit Pose Detection) to analyze skeletal landmarks, posture angles, and repetition depth for pushups, squats, and associated exercises.
-        </p>
-        <div class="callout info">
-          <div class="callout-title">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-            On-Device Privacy Protection
-          </div>
-          Solo camera detection occurs 100% in your device's local memory (RAM). Camera video frames for solo exercise detection are processed locally and <strong>never recorded, stored, or uploaded</strong> to our servers.
+      <!-- Section 1 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">1.</span>
+          <h2 class="section-title">Acceptance of Terms</h2>
         </div>
         <p>
-          <strong>Detection Accuracy Disclaimer:</strong> Computer vision tracking can be influenced by lighting conditions, clothing contrast, device camera angle, hardware processing speeds, and physical obstacles. OUTREP does not warrant that AI repetition counting will be completely error-free or 100% infallible in all physical settings.
+          By downloading, installing, registering for, or using OUTREP: Push-Up Battles ("OUTREP", "App", "we", or "us"), you agree to comply with and be legally bound by these Terms of Service. If you do not agree to these terms, please discontinue use of the App immediately.
+        </p>
+        <p>
+          We reserve the right to amend or update these terms periodically. Continued use of the application after modifications are published signifies your acceptance of the revised agreement.
         </p>
       </section>
 
-      <!-- 5. LIVE 1v1 BATTLES & CONDUCT -->
-      <section id="live-multiplayer" class="doc-section">
-        <h2><span class="sec-num">05</span> Live 1v1 Video Battles &amp; Athlete Code of Conduct</h2>
-        <p>
-          OUTREP features real-time peer-to-peer multiplayer video battles where athletes compete against peers or friends head-to-head via WebRTC. Participation in live multiplayer matches requires adherence to our Athlete Code of Conduct:
-        </p>
+      <div class="section-divider"></div>
 
-        <h3>Strictly Prohibited Behaviors:</h3>
-        <ul>
-          <li><strong>Indecency &amp; Nudity:</strong> Broadcasting nudity, sexually suggestive actions, indecent exposure, or provocative conduct over live cameras is strictly forbidden.</li>
-          <li><strong>Harassment &amp; Hate Speech:</strong> Bullying, intimidation, derogatory slurs, hate speech, or harassment toward any opponent via voice chat, match gestures, or usernames.</li>
-          <li><strong>Dangerous Activities:</strong> Performing exercises in unsafe environments, displaying weapons, alcohol, illicit substances, or engaging in reckless self-harm.</li>
-          <li><strong>Offensive Profiles:</strong> Uploading profile avatars or choosing athlete usernames that contain obscenities, hate symbols, or infringe upon third-party trademarks.</li>
-        </ul>
+      <!-- Section 2 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">2.</span>
+          <h2 class="section-title">Health &amp; Physical Safety Disclaimer</h2>
+        </div>
         <p>
-          We employ player reporting tools. Any user found violating community conduct standards during live battles will face immediate match termination, temporary suspension, or permanent account blacklisting.
+          Physical exercise and athletic competition carry inherent risks of injury, physical strain, or medical complications. You are solely responsible for assessing your physical health and fitness level prior to performing workouts or battles on OUTREP.
+        </p>
+        <p>
+          OUTREP does not provide medical evaluation or clinical advice. Always consult a qualified medical professional before undertaking any rigorous exercise routine or pushup challenge.
+        </p>
+        <p>
+          <strong>Assumption of Physical Risk:</strong> By participating in OUTREP workouts, arcade challenges, or live 1v1 matches, you voluntarily accept full responsibility for your physical safety and assume all risks of injury. OUTREP is not liable for any physical harm, strains, or accidents sustained while using the application.
         </p>
       </section>
 
-      <!-- 6. ANTI-CHEAT & FAIR PLAY -->
-      <section id="fair-play" class="doc-section">
-        <h2><span class="sec-num">06</span> Fair Play &amp; Anti-Cheat Policy</h2>
+      <div class="section-divider"></div>
+
+      <!-- Section 3 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">3.</span>
+          <h2 class="section-title">User Accounts &amp; Security</h2>
+        </div>
         <p>
-          The integrity of OUTREP leaderboards and multiplayer competitions is vital. We maintain zero tolerance for athletic cheating, manipulation, or fraudulent rep generation:
+          To access leaderboards and live challenges, you must create an account providing accurate and authentic information.
         </p>
-        <ul>
-          <li><strong>No Camera Spoofing:</strong> You may not route pre-recorded videos, simulated webcam loops, or synthetic camera feeds into the App during solo challenges or 1v1 battles.</li>
-          <li><strong>No Automation or Emulators:</strong> You may not use automated bots, macros, scripts, device emulators, or reverse-engineered packets to simulate workout completions or inflate repetition counters.</li>
-          <li><strong>Physical Repetition Authenticity:</strong> Workout repetitions must be performed personally by the account owner in real time according to the exercise form guidelines indicated in the App.</li>
-        </ul>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Account Confidentiality:</strong> You are solely responsible for safeguarding your login credentials and for all activities conducted under your account.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Age Requirements:</strong> You must be at least 13 years old (or the legal age of consent in your jurisdiction) to establish an account.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div><strong>Single Profile:</strong> Creating duplicate accounts or manipulating ratings through alt accounts violates our fair play policy.</div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 4 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">4.</span>
+          <h2 class="section-title">Live 1v1 Battles &amp; Community Standards</h2>
+        </div>
         <p>
-          OUTREP reserves the absolute right to audit suspicious rep counts, forfeit match wins, reset XP scores, or terminate accounts identified as cheating without prior notice.
+          OUTREP features live real-time video competition where athletes match against peers. You agree to treat all athletes with respect and maintain high standards of sportsmanship.
+        </p>
+        <p>
+          The following behaviors are strictly prohibited and will result in immediate suspension or permanent ban:
+        </p>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Broadcasting nudity, sexually explicit, or inappropriate camera content during live matches.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Harassment, abusive language, bullying, or hate speech toward opponents.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Using offensive, vulgar, or trademark-infringing usernames and profile pictures.</div>
+        </div>
+        <div class="bullet-point">
+          <span class="bullet-dot"></span>
+          <div>Employing third-party bots, emulators, camera spoofers, or automated tools to fabricate workout repetitions.</div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 5 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">5.</span>
+          <h2 class="section-title">Intellectual Property Rights</h2>
+        </div>
+        <p>
+          All components of OUTREP—including but not limited to the user interface, exercise detection algorithms, game modes (Flappy Pushups, Neck Rush), artwork, audio effects, and trademarks—are the proprietary property of OUTREP and protected by international intellectual property laws.
+        </p>
+        <p>
+          You are granted a limited, personal, revocable, non-exclusive license to use the application for its intended workout purpose.
         </p>
       </section>
 
-      <!-- 7. VIRTUAL ITEMS & XP -->
-      <section id="virtual-items" class="doc-section">
-        <h2><span class="sec-num">07</span> Experience Points (XP), Badges &amp; Virtual Items</h2>
-        <p>
-          During your workout journey, you may earn Experience Points (XP), unlock athlete levels, obtain achievement badges, and participate in boss raids.
-        </p>
-        <ul>
-          <li><strong>No Monetary Value:</strong> All virtual points, levels, ranks, streak counters, badges, and unlockables are purely motivational game assets. They have no cash, real-world monetary, or property value.</li>
-          <li><strong>Non-Transferable:</strong> Virtual points cannot be redeemed, traded, sold, bartered, or transferred to any other player or external platform.</li>
-          <li><strong>Modification Rights:</strong> We reserve the right to calibrate, balance, adjust, or reset XP systems, leaderboard criteria, or game progression algorithms as needed to preserve gameplay balance.</li>
-        </ul>
-      </section>
+      <div class="section-divider"></div>
 
-      <!-- 8. PURCHASES & SUBSCRIPTIONS -->
-      <section id="purchases" class="doc-section">
-        <h2><span class="sec-num">08</span> In-App Purchases &amp; Subscriptions</h2>
+      <!-- Section 6 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">6.</span>
+          <h2 class="section-title">Account Termination &amp; Deletion</h2>
+        </div>
         <p>
-          If OUTREP offers premium workout features, battle passes, or subscription tiers:
-        </p>
-        <ul>
-          <li><strong>Platform Billing:</strong> All financial transactions and recurring subscription payments are processed exclusively through the Apple App Store or Google Play Store under their applicable terms of billing.</li>
-          <li><strong>Managing Subscriptions:</strong> Subscriptions automatically renew unless cancelled at least 24 hours prior to the conclusion of the active billing period. You may cancel auto-renewal at any time through your Apple ID or Google Play account settings.</li>
-          <li><strong>Refund Policy:</strong> Refunds for in-app purchases or subscriptions are governed strictly by the refund policies of Apple and Google. OUTREP does not directly process or issue financial refunds.</li>
-        </ul>
-      </section>
-
-      <!-- 9. INTELLECTUAL PROPERTY -->
-      <section id="intellectual-property" class="doc-section">
-        <h2><span class="sec-num">09</span> Intellectual Property &amp; Limited License</h2>
-        <p>
-          All intellectual property rights in and to OUTREP: Compete With Friends—including source code, visual interfaces, sound effects, audio assets, animations, game mechanics (such as Flappy Pushups, Neck Rush, Boss Battles), logos, trademarks, and brand identity—are owned exclusively by OUTREP and protected by copyright and intellectual property laws.
+          You may terminate this agreement at any time by permanently deleting your account and data via <strong>Profile &gt; Manage Account &gt; Delete Account</strong>.
         </p>
         <p>
-          Subject to your compliance with these Terms, OUTREP grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and execute the App on your personal mobile device solely for personal fitness and entertainment purposes. You may not decompile, reverse-engineer, copy, modify, distribute, or create derivative works from the application.
+          We reserve the right to suspend or permanently terminate accounts that violate these Terms, compromise platform integrity, or engage in cheating without prior notice or refund.
         </p>
       </section>
 
-      <!-- 10. USER CONTENT -->
-      <section id="user-content" class="doc-section">
-        <h2><span class="sec-num">10</span> User-Generated Content &amp; Media</h2>
-        <p>
-          You may provide content such as profile display names, avatar images, and match feedback ("User Content"). You represent and warrant that:
-        </p>
-        <ul>
-          <li>You own or possess the necessary rights and permissions to submit such User Content.</li>
-          <li>Your User Content does not violate any copyright, trademark, privacy right, publicity right, or other proprietary right of any third party.</li>
-          <li>You grant OUTREP a worldwide, royalty-free license to display your public profile name and avatar solely to deliver app leaderboards and matchmaking services.</li>
-        </ul>
-      </section>
+      <div class="section-divider"></div>
 
-      <!-- 11. TERMINATION & DELETION -->
-      <section id="termination" class="doc-section">
-        <h2><span class="sec-num">11</span> Account Termination &amp; Deletion</h2>
+      <!-- Section 7 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">7.</span>
+          <h2 class="section-title">Disclaimers &amp; Limitation of Liability</h2>
+        </div>
         <p>
-          <strong>Termination by User:</strong> You may terminate your relationship with OUTREP at any time by deleting your account directly via the App (Profile &gt; Manage Account &gt; Delete Account) or by emailing us. For step-by-step guidance, please review our <a href="delete_account.html" style="color: var(--primary-light); font-weight: 600;">Account Deletion Instructions</a>.
+          OUTREP is provided on an "as-is" and "as-available" basis without warranties of any kind, whether express or implied. We do not guarantee that computer vision detection will be 100% error-free in all lighting or angle conditions.
         </p>
         <p>
-          <strong>Termination by OUTREP:</strong> We reserve the right to immediately suspend, restrict, or permanently terminate your access to the App, with or without notice, if you breach these Terms, engage in athletic cheating or harassment, or compromise system stability.
+          To the maximum extent permitted by applicable law, OUTREP shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the application.
         </p>
       </section>
 
-      <!-- 12. DISCLAIMER OF WARRANTIES -->
-      <section id="warranty-disclaimer" class="doc-section">
-        <h2><span class="sec-num">12</span> Disclaimer of Warranties</h2>
-        <p>
-          OUTREP: COMPETE WITH FRIENDS IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
-        </p>
-        <ul>
-          <li>IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</li>
-          <li>WARRANTIES THAT THE APP WILL BE UNINTERRUPTED, TIMELY, SECURE, BUG-FREE, OR FREE OF VIRUSES.</li>
-          <li>WARRANTIES REGARDING THE ACCURACY, RELIABILITY, OR PRECISION OF POSE DETECTION, REPETITION TRACKING, OR WORKOUT RESULTS.</li>
-        </ul>
-      </section>
+      <div class="section-divider"></div>
 
-      <!-- 13. LIMITATION OF LIABILITY -->
-      <section id="limitation-liability" class="doc-section">
-        <h2><span class="sec-num">13</span> Limitation of Liability</h2>
+      <!-- Section 8 -->
+      <section class="section-item">
+        <div class="section-header">
+          <span class="section-num">8.</span>
+          <h2 class="section-title">Contact &amp; Legal Inquiries</h2>
+        </div>
         <p>
-          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL OUTREP, ITS CREATORS, DEVELOPERS, AFFILIATES, OFFICERS, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
-        </p>
-        <ul>
-          <li>PERSONAL INJURY, BODILY HARM, PHYSICAL STRAIN, OR ACCIDENTS ARISING FROM PHYSICAL EXERCISE OR ATHLETIC COMPETITIONS.</li>
-          <li>LOSS OF DATA, LOSS OF GOODWILL, SERVICE INTERRUPTIONS, DEVICE DAMAGE, OR NETWORK OUTAGES.</li>
-          <li>CONDUCT, STATEMENTS, OR BROADCASTS OF ANY THIRD PARTY OR FELLOW ATHLETE DURING LIVE 1v1 MATCHES.</li>
-        </ul>
-        <p>
-          IN NO EVENT SHALL OUR TOTAL CUMULATIVE LIABILITY TO YOU EXCEED THE AMOUNT PAID BY YOU TO OUTREP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR $50.00 USD, WHICHEVER IS LESS.
-        </p>
-      </section>
-
-      <!-- 14. INDEMNIFICATION -->
-      <section id="indemnification" class="doc-section">
-        <h2><span class="sec-num">14</span> Indemnification</h2>
-        <p>
-          You agree to defend, indemnify, and hold harmless OUTREP, its developers, operators, and partners from and against any claims, damages, liabilities, losses, judgments, awards, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to:
-        </p>
-        <ul>
-          <li>Your breach or violation of these Terms of Service.</li>
-          <li>Your User Content or athlete conduct during live 1v1 video matches.</li>
-          <li>Physical injuries or property damage caused by your physical workout activities.</li>
-          <li>Your violation of any rights of another athlete or third party.</li>
-        </ul>
-      </section>
-
-      <!-- 15. GOVERNING LAW & DISPUTES -->
-      <section id="governing-law" class="doc-section">
-        <h2><span class="sec-num">15</span> Governing Law &amp; Dispute Resolution</h2>
-        <p>
-          These Terms and your use of OUTREP shall be governed by and construed in accordance with applicable laws, without giving effect to conflict of law principles.
-        </p>
-        <p>
-          <strong>Informal Resolution First:</strong> Before initiating formal proceedings, you agree to contact OUTREP support at <a href="mailto:outrep.app@gmail.com" style="color: var(--primary-light);">outrep.app@gmail.com</a> to seek a swift and amicable resolution in good faith.
-        </p>
-      </section>
-
-      <!-- 16. CONTACT & LEGAL -->
-      <section id="contact-legal" class="doc-section">
-        <h2><span class="sec-num">16</span> Contact &amp; Legal Inquiries</h2>
-        <p>
-          If you have questions, feedback, or legal inquiries regarding these Terms &amp; Conditions, please reach out to our team:
+          If you have any questions, legal notices, or feedback regarding these Terms of Service, please reach out to our legal team:
         </p>
 
-        <div class="contact-card">
-          <h3 style="margin-top: 0; color: #FFF; font-size: 18px;">OUTREP Legal &amp; Support Team</h3>
-          <p style="margin-bottom: 0;">
-            📧 <strong>Legal Inquiries:</strong> <a href="mailto:outrep.app@gmail.com">outrep.app@gmail.com</a><br>
-            📱 <strong>Application:</strong> OUTREP: Compete With Friends<br>
-            🌐 <strong>Official Documentation:</strong> <a href="privacy_policy.html">Privacy Policy</a> | <a href="delete_account.html">Account Deletion</a>
-          </p>
+        <div class="contact-box">
+          <div class="contact-header">
+            <span>⚖️</span>
+            <span>OUTREP Legal Department</span>
+          </div>
+          <div class="contact-info">
+            <strong>Email:</strong> outrep.app@gmail.com<br>
+            <strong>Application:</strong> OUTREP: Push-Up Battles
+          </div>
+          <a href="mailto:outrep.app@gmail.com?subject=Terms%20of%20Service%20Inquiry%20-%20OUTREP" class="contact-btn">
+            Contact Legal Team &rarr;
+          </a>
         </div>
       </section>
 
     </article>
   </main>
 
-  <!-- ─── FOOTER ─── -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-links">
         <a href="privacy_policy.html">Privacy Policy</a>
-        <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
+        <a href="terms_and_conditions.html">Terms of Service</a>
         <a href="delete_account.html">Delete Account Procedure</a>
-        <a href="mailto:outrep.app@gmail.com">Support Contact</a>
+        <a href="mailto:outrep.app@gmail.com">Contact Support</a>
       </div>
-      <p>© 2026 OUTREP: Compete With Friends. All rights reserved.</p>
-      <p style="font-size: 13px;">Designed for high-performance athletes with fair play and sportsmanship at the core.</p>
+      <p>© 2026 OUTREP: Push-Up Battles. All rights reserved.</p>
     </div>
   </footer>
 
-  <script>
-    // Smooth active navigation highlighting
-    const sections = document.querySelectorAll('.doc-section');
-    const navLinks = document.querySelectorAll('.nav-list a');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - 150) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-          link.style.color = 'var(--primary-light)';
-          link.style.backgroundColor = 'var(--bg-surface-elevated)';
-        } else {
-          link.style.color = '';
-          link.style.backgroundColor = '';
-        }
-      });
-    });
-  </script>
 </body>
 </html>
