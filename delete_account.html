@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion Instructions - OUTREP: Push-Up Battles</title>
+  <meta name="description" content="Step-by-step instructions on how to permanently delete your OUTREP: Push-Up Battles account and all associated workout, match, and profile data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-base: #F5F7FA;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F8FAFC;
+      --primary: #38C172;
+      --primary-dark: #2E7D32;
+      --primary-tint: rgba(56, 193, 114, 0.12);
+      --danger: #FF4B4B;
+      --danger-dark: #D32F2F;
+      --danger-tint: rgba(255, 75, 75, 0.10);
+      --danger-border: rgba(255, 75, 75, 0.25);
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
+      --text-muted: #94A3B8;
+      --text-body: #475569;
+      --border-color: #E2E8F0;
+      --border-light: #F1F5F9;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --font-heading: 'Bebas Neue', 'Inter', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── TOP NAVBAR ─── */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1.5px solid var(--border-color);
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: #FFF;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding: 3px 12px;
+      border-radius: var(--radius-sm);
+    }
+
+    .brand-name {
+      font-family: var(--font-body);
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      padding: 7px 14px;
+      border-radius: var(--radius-full);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-dark);
+      background: var(--primary-tint);
+    }
+
+    .nav-link.active {
+      color: var(--danger-dark);
+      background: var(--danger-tint);
+      border-color: var(--danger-border);
+      font-weight: 700;
+    }
+
+    /* ─── MAIN CONTENT ─── */
+    .page-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 24px;
+    }
+
+    .page-tag {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: var(--danger-dark);
+      background: var(--danger-tint);
+      padding: 4px 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 10px;
+    }
+
+    .page-title {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.6px;
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      max-width: 760px;
+    }
+
+    /* ─── WARNING CALLOUT ─── */
+    .warning-callout {
+      background: var(--danger-tint);
+      border: 1.2px solid var(--danger-border);
+      border-left: 4px solid var(--danger);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin: 24px 0 32px;
+    }
+
+    .warning-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--danger-dark);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .warning-callout p {
+      font-size: 13.5px;
+      color: var(--text-body);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ─── WHITE CANVAS ─── */
+    .document-canvas {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1.2px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      padding: 36px 32px;
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+      margin-bottom: 24px;
+    }
+
+    .step-box {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary-tint);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .step-heading {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .step-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .step-path {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      background: var(--primary-tint);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ─── DATA TABLE ─── */
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    table.data-table th {
+      background: var(--bg-card-subtle);
+      color: var(--text-primary);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    table.data-table td {
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-body);
+    }
+
+    table.data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge-deleted {
+      display: inline-block;
+      padding: 3px 8px;
+      background: var(--danger-tint);
+      color: var(--danger-dark);
+      border-radius: var(--radius-full);
+      font-size: 11.5px;
+      font-weight: 700;
+    }
+
+    /* ─── EMAIL FALLBACK ─── */
+    .email-box {
+      background: var(--bg-card);
+      border: 1.2px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 32px;
+    }
+
+    .email-box h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .email-box p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background: var(--danger);
+      color: #FFFFFF;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    .email-btn:hover {
+      background: var(--danger-dark);
+    }
+
+    /* ─── FOOTER ─── */
+    footer.site-footer {
+      border-top: 1px solid var(--border-color);
+      background: #FFFFFF;
+      padding: 32px 20px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+
+    .footer-content {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary-dark);
+    }
+
+    @media (max-width: 640px) {
+      .document-canvas, .email-box {
+        padding: 24px 18px;
+      }
+      .page-title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="privacy_policy.html" class="brand">
+        <span class="brand-badge">OUTREP</span>
+        <span class="brand-name">Push-Up Battles</span>
+      </a>
+      <div class="nav-links">
+        <a href="privacy_policy.html" class="nav-link">Privacy Policy</a>
+        <a href="terms_and_conditions.html" class="nav-link">Terms of Service</a>
+        <a href="delete_account.html" class="nav-link active">Delete Account</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN PAGE WRAPPER -->
+  <main class="page-wrapper">
+    <div class="page-header">
+      <div class="page-tag">DATA DELETION INSTRUCTIONS</div>
+      <h1 class="page-title">Account Deletion Instructions</h1>
+      <p class="page-subtitle">
+        Step-by-step instructions on permanently deleting your OUTREP account, removing workout logs, XP, and profile details.
+      </p>
+    </div>
+
+    <!-- WARNING NOTICE -->
+    <div class="warning-callout">
+      <div class="warning-title">⚠️ Immediate and Permanent Action</div>
+      <p>
+        Deleting your account is permanent and cannot be undone. All your workout statistics, match history, levels, XP, and friend links will be completely and irreversibly removed.
+      </p>
+    </div>
+
+    <!-- METHOD 1: IN-APP INSTRUCTIONS -->
+    <article class="document-canvas">
+      <h2 class="section-title">📱 Method 1: Delete Directly Inside the App (Recommended)</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 0;">
+        Follow these steps inside the OUTREP mobile application:
+      </p>
+
+      <div class="steps-grid">
+        <div class="step-box">
+          <div class="step-badge">1</div>
+          <div class="step-heading">Open Profile Screen</div>
+          <div class="step-desc">
+            Launch OUTREP and tap the <strong>Profile</strong> tab on the bottom navigation bar.
+          </div>
+          <span class="step-path">App &gt; Profile</span>
+        </div>
+
+        <div class="step-box">
+          <div class="step-badge">2</div>
+          <div class="step-heading">Tap Manage Account</div>
+          <div class="step-desc">
+            Under the <strong>ACCOUNT</strong> section, tap <strong>Manage Account</strong>.
+          </div>
+          <span class="step-path">Profile &gt; Manage Account</span>
+        </div>
+
+        <div class="step-box">
+          <div class="step-badge">3</div>
+          <div class="step-heading">Tap Delete Account</div>
+          <div class="step-desc">
+            Scroll to the bottom, tap the red <strong>DELETE ACCOUNT</strong> button, and confirm the prompt.
+          </div>
+          <span class="step-path" style="background: var(--danger-tint); color: var(--danger-dark);">Manage &gt; DELETE ACCOUNT</span>
+        </div>
+      </div>
+
+      <div style="height: 1px; background: var(--border-light); margin: 28px 0;"></div>
+
+      <h2 class="section-title">📋 Data Deletion Breakdown</h2>
+      <p style="color: var(--text-secondary);">
+        In accordance with Google Play Developer Policy and data protection regulations:
+      </p>
+
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Status</th>
+              <th>Action Taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Profile &amp; Account</strong></td>
+              <td><span class="badge-deleted">Permanently Deleted</span></td>
+              <td>Username, display name, email, avatar image, and Firebase Auth UID are permanently erased.</td>
+            </tr>
+            <tr>
+              <td><strong>Workout Metrics &amp; Reps</strong></td>
+              <td><span class="badge-deleted">Permanently Deleted</span></td>
+              <td>All recorded pushup counts, workout timestamps, and personal records are purged immediately.</td>
+            </tr>
+            <tr>
+              <td><strong>XP, Levels &amp; Streaks</strong></td>
+              <td><span class="badge-deleted">Permanently Deleted</span></td>
+              <td>Athlete levels, XP transaction logs, streak records, and boss raid history are removed.</td>
+            </tr>
+            <tr>
+              <td><strong>Matches &amp; Social</strong></td>
+              <td><span class="badge-deleted">Permanently Deleted</span></td>
+              <td>1v1 match results, friend lists, pending challenge requests, and head-to-head records are severed.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- METHOD 2: EMAIL FALLBACK -->
+    <div class="email-box">
+      <h3>✉️ Method 2: Alternate Deletion Request (Via Email)</h3>
+      <p>
+        If you have uninstalled the app or cannot access your account on your device, you can submit an account deletion request directly to our support team:
+      </p>
+      <p>
+        Please email us from your <strong>registered email address</strong> with the subject line <strong>"Account Deletion Request - OUTREP"</strong>:
+      </p>
+      <a href="mailto:outrep.app@gmail.com?subject=Account%20Deletion%20Request%20-%20OUTREP" class="email-btn">
+        Email outrep.app@gmail.com &rarr;
+      </a>
+      <p style="margin-top: 14px; margin-bottom: 0; font-size: 13px; color: var(--text-muted);">
+        Email deletion requests are verified and processed within 3–5 business days.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_and_conditions.html">Terms of Service</a>
+        <a href="delete_account.html">Delete Account Procedure</a>
+        <a href="mailto:outrep.app@gmail.com">Contact Support</a>
+      </div>
+      <p>© 2026 OUTREP: Push-Up Battles. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
